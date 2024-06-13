@@ -1,0 +1,353 @@
+:root {
+    --white: rgb(242, 242, 242);
+    --gray: rgb(232, 232, 232);
+    --gray-2: rgb(206, 206, 206);
+    --river-bed: #44525f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+body::-webkit-scrollbar {width: 0}
+
+h1 {font-size: 50px}
+
+h2 {font-size: 36px}
+
+h3 {font-size: 28px}
+
+p, h4 {font-size: 18px}
+
+h6 {font-size: 11px}
+
+header {
+    background-color: var(--river-bed);
+    color: var(--white);
+    width: calc(100vw - 60px);
+    height: 30vh;
+    padding: 30px;
+    display: flex;
+}
+
+header .content h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+header .content ul {
+    margin-top: 35px;
+    margin-left: 45px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+header .content li {
+    margin-top: 5px;
+    list-style-image: url(correct.png);
+}
+
+header .content li p {
+    transform: translateY(-4px);
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+header .image {
+    background-color: var(--white);
+    width: 40%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.about {
+    background-color: var(--white);
+    color: var(--river-bed);
+    width: calc(100vw - 60px);
+    height: 30vh;
+    padding: 30px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.about p {
+    margin-top: 20px;
+    margin-right: 20%;
+}
+
+.about .image {
+    background-color: var(--river-bed);
+    width: 90%;
+    height: 110%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.pros {
+    background-color: var(--gray);
+    color: var(--river-bed);
+    width: calc(100vw - 60px);
+    padding: 30px;
+}
+
+.pros h2, .screenshot h2, .reviews h2, .buy-it h2, .contacts h2 {
+    text-align: center;
+}
+
+.pros ul {
+    display: flex;
+    list-style-image: url(plus.png);
+    margin-top: 10px;
+}
+
+.pros .column, .screenshot .column, .reviews .column {
+    width: 50%;
+}
+
+.pros li {
+    margin-top: 20px;
+    margin-right: 8%;
+    margin-left: 5%;
+}
+
+.pros li p {
+    transform: translateY(-25px);
+    margin-left: 7px;
+}
+
+.screenshot {
+    background-color: var(--white);
+    color: var(--river-bed);
+    width: calc(100vw - 100px);
+    padding: 50px;
+}
+
+.screenshot ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.screenshot li {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.screenshot .image {
+    background-color: var(--river-bed);
+    width: 90vw;
+    height: 25vh;
+    margin-right: 2.5%;
+}
+
+.screenshot h3 {
+    margin-right: 10%;
+}
+
+.screenshot p {
+    margin-top: 10px;
+    margin-right: 10%;
+}
+
+.reviews {
+    background-color: var(--gray);
+    color: var(--river-bed);
+    width: calc(100vw - 60px);
+    padding: 30px;
+}
+
+.reviews ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.reviews li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.reviews .avatar {
+    border-radius: 50%;
+    background-color: var(--river-bed);
+    height: 5vw;
+    width: 5vw;
+    margin-right: 4%;
+}
+
+.reviews .message-box {
+    background-color: var(--gray-2);
+    border: 2px solid var(--gray-2);
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 10px solid var(--gray-2); 
+    margin-top: calc(2.5vw - 5px);
+}
+
+.reviews .author {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.buy-it {
+    background-color: var(--white);
+    color: var(--river-bed);
+    width: calc(100vw - 100px);
+    padding: 50px;
+}
+
+.buy-it ul {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.buy-it .column {
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.buy-it .card {
+    width: 70%;
+    border: 2px solid var(--river-bed);
+    border-radius: 10px;
+    background-color: var(--river-bed);
+}
+
+.card .title  {
+    color: var(--white);
+    background-color: var(--river-bed);
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-right: 10px solid var(--river-bed);
+}
+
+.card .cost {
+    font-size: 36px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--white);
+}
+
+.card .content ol {
+    color: var(--white);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card .content li {
+    margin-top: 5px;
+    transform: translateX(45px);
+}
+
+
+button {
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: var(--white);
+    color: var(--river-bed);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contacts {
+    background-color: var(--river-bed);
+    color: var(--white);
+    width: calc(100vw - 100px);
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+.contacts .info {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contacts input, .contacts textarea {
+    width: 35vw;
+    height: 3vh;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.contacts input::placeholder, .contacts textarea::placeholder {
+    color: var(--river-bed);
+    font-size: 16px;
+}
+
+.contacts textarea {
+    height: 10vw;
+    display: flex;
+    resize: none;
+}
+
+.contacts button {
+    width: 25%;
+    margin-top: 30px;
+}
+
+.contacts .social {
+    margin-top: 15px;
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contacts .social img {
+    height: 35px;
+    width: 35px;
+}
+
+.contacts .social p {
+    margin-left: 10px;
+}
+
+.other-social {
+    display: flex;
+    margin-left: 3vw;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.other-social img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin: 4px;
+    color: var(--river-bed);
+}
